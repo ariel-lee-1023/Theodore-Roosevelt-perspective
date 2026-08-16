@@ -1,0 +1,93 @@
+# ---------------------------------------------------------------------------
+# Source corpus — never commit
+# ---------------------------------------------------------------------------
+# This is the load-bearing section. NOTICE.md and README.md both state that the
+# source material is not included in this repository. Roosevelt's own writing is
+# public domain and is freely available from Project Gutenberg by the catalogue
+# numbers listed in NOTICE.md — there is no reason to vendor ~2.5M tokens of it
+# here. The one secondhand work consulted for context, Harbaugh's *Power and
+# Responsibility*, is still in copyright, and one careless `git add -A` from the
+# directory holding the books would publish it.
+#
+# The corpus stays on the machine that ran the distillation.
+*.pdf
+*.epub
+*.mobi
+*.azw
+*.azw3
+*.djvu
+*.doc
+*.docx
+*.rtf
+*.odt
+*.txt
+
+corpus/
+corpora/
+sources/
+source/
+raw/
+transcripts/
+incoming/
+uploaded_attachments/
+
+# ---------------------------------------------------------------------------
+# Distillation run artifacts
+# ---------------------------------------------------------------------------
+# If a fold-in is ever run from inside this repo, persona-distiller writes its
+# work directory and intermediate JSON here. Those are scratch, not deliverables
+# — the honesty ledger in fidelity-ledger/provenance.md is what gets committed.
+#
+# fidelity.json is deliberately NOT ignored: it is the machine-readable twin of
+# the ledger and is shipped with the package.
+persona_work/
+.persona_work/
+work/
+style_samples/
+
+coverage_map.json
+passages.json
+extractions.json
+scores.json
+core_elements.json
+manifest.json
+segspec.json
+registers.json
+style.json
+holdout.json
+split.json
+gate_results.json
+proj_*.json
+disc_*.json
+name_audit*.json
+validate*.json
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+# Only relevant when the distiller's scripts are run from this directory.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---------------------------------------------------------------------------
+# Local agent and editor state
+# ---------------------------------------------------------------------------
+.claude/settings.local.json
+.idea/
+.vscode/
+*.swp
+*~
+
+# ---------------------------------------------------------------------------
+# OS
+# ---------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+Thumbs.db
+desktop.ini
