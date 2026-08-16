@@ -145,14 +145,16 @@ roll-up moved to `frameworks.md` §4; PR13, PR14, CR9 and IM9 moved to cluster m
 compression) was not required at that stage. Six further elements were relocated during assembly, as
 recorded in §2.
 
-Realised core size: 8,244.30 tokens against the 7,500 budget, +9.9%, inside the +10% assembly
+Realised core size: 8,245.30 tokens against the 7,500 budget, +9.9%, inside the +10% assembly
 tolerance (8,250). Seven successive trimming passes were required to reach it: 9,532 → 9,262 →
-8,888 → 8,655 → 8,494 → 8,382 → 8,346 → 8,244.
+8,888 → 8,655 → 8,494 → 8,382 → 8,346 → 8,244, plus one token added in Batch 6 by quoting the frontmatter
+description (8,245.30).
 
 **Standing modules and cluster modules.** Realised sizes are the calibration data for the next run.
 
 | module | computed budget | realised | delta |
 |---|---|---|---|
+| `SKILL.md` | 7,500 | 8,245.30 | +9.9% |
 | `references/frameworks.md` | 6,975 | 7,171.43 | +2.8% |
 | `references/voice.md` | 3,810 | 4,168.37 | +9.4% |
 | `references/clusters/c01-strenuous-life.md` | 3,215 | 2,972.47 | −7.5% |
@@ -472,3 +474,28 @@ nearest thing to a baseline delta this run has:
      a link that must resolve. The Harbaugh cluster is therefore named rather than numbered here.
   6. `token_count.py` is a heuristic estimator, not a model tokenizer. Every budget figure in §3
      inherits its error, and the c02 module's +10.1% is inside the estimator's own noise.
+
+### Batch 6 — 2026-08-16 — frontmatter YAML repair
+
+- **Diagnosis** — GitHub's markdown preview refused to render `SKILL.md`, reporting
+  "mapping values are not allowed in this context at line 2 column 259". The
+  `description` value was an unquoted YAML scalar containing a colon-space
+  sequence, in the phrase "Default scene: answering live and at length". A plain
+  scalar cannot hold `: ` because the parser reads it as a nested mapping key.
+  The file was valid Markdown and the skill loaded in agents that read the block
+  loosely, but any strict YAML parser rejected the whole frontmatter, which would
+  have taken the `name` field down with it.
+- **Action** — the `description` value was wrapped in double quotes. It contains
+  no double-quote characters, so no escaping was required. The text is unchanged
+  character for character. Parsing was re-verified with `yaml.safe_load`.
+- **Length cost** — two characters, one estimated token. Core moves 8,244.30 →
+  8,245.30, still inside the +10% tolerance (8,250).
+- **Not re-tested** — **none of the fidelity tests were re-run, and none needed to
+  be.** The change is two quote marks in a metadata field; no rule, count, or
+  quotation in the body was touched. `validate_package.py` was re-run and passes
+  with 0 errors and 0 warnings. `content_hash` in `fidelity.json` was recomputed.
+- **Left undone** — the distiller's `validate_package.py` checks that frontmatter
+  has `name` and `description` (C1) but does not parse the block as YAML, so it
+  reported OK on a file no YAML parser would accept. A strict-parse step in C1
+  would have caught this before release.
+

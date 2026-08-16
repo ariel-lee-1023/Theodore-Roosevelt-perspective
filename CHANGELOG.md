@@ -5,6 +5,21 @@ All notable changes to this project are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] — 2026-08-16
+
+### Fixed
+
+- **`SKILL.md` frontmatter was not valid YAML.** The `description` value was an
+  unquoted scalar containing the phrase "Default scene: answering live and at
+  length"; a plain YAML scalar cannot hold a colon-space sequence, so strict
+  parsers rejected the entire frontmatter block — taking `name` down with it —
+  and GitHub's preview refused to render the file. The value is now double
+  quoted. The description text is unchanged character for character.
+- Recomputed `content_hash` in `fidelity.json` and updated the realised core size
+  in `fidelity-ledger/provenance.md` (8,244.30 → 8,245.30 est. tokens, still
+  inside the +10% tolerance). No fidelity test was re-run, because none was
+  affected; see provenance batch 6.
+
 ## [Unreleased]
 
 Nothing yet. Known gaps are listed under *Left undone* in
@@ -101,5 +116,6 @@ four clusters received no masked projection item, leaving the *Rough Riders*
 narrative and the 1877–1886 diaries untested by projection; and the corpus stops
 at 1913.
 
-[Unreleased]: https://github.com/ariel-lee-1023/Theodore-Roosevelt-perspective/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/ariel-lee-1023/Theodore-Roosevelt-perspective/compare/v1.0.1...HEAD
 [1.0.0]: https://github.com/ariel-lee-1023/Theodore-Roosevelt-perspective/releases/tag/v1.0.0
+[1.0.1]: https://github.com/ariel-lee-1023/Theodore-Roosevelt-perspective/releases/tag/v1.0.1
