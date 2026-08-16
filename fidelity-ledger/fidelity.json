@@ -1,0 +1,155 @@
+{
+  "content_hash": "sha256:05b45adae69058c06a9510443cd66ed8b480bdd781ea3a32b2e473ae6ad99729",
+  "register_families": [
+    "R1",
+    "R2",
+    "R3"
+  ],
+  "stale": [],
+  "projection": {
+    "gate": {
+      "overall": 0.875,
+      "hit_2": 0.75,
+      "hit_1": 0.25,
+      "hit_0": 0.0,
+      "passed": true,
+      "recurations": 0,
+      "note": "passed on first run; no re-curation loop was triggered"
+    },
+    "final": {
+      "overall": 0.958,
+      "hit_2": 0.917,
+      "hit_1": 0.083,
+      "hit_0": 0.0,
+      "passed": true,
+      "by_cluster_items": {
+        "c01": 6,
+        "c03": 6,
+        "c04": 6,
+        "c07": 3,
+        "c08": 3,
+        "c02": 2,
+        "c06": 1,
+        "c05": 0,
+        "c09": 0,
+        "c10": 0,
+        "harbaugh": 0
+      },
+      "note": "same mask as the gate, so this measures assembly fidelity rather than generalisation; prediction was blind but grading was performed by the assembling agent"
+    },
+    "seed": 42,
+    "fraction": 0.13,
+    "n_masked": 12,
+    "n_elements": 90,
+    "stratified": true,
+    "stratified_by": "element class, not topic domain",
+    "masked_ids": [
+      "CR14",
+      "CR3",
+      "CR4",
+      "CR8",
+      "IM8",
+      "MOD6",
+      "MOD7",
+      "PR16",
+      "PR4",
+      "PR6",
+      "PROC2",
+      "VD11"
+    ],
+    "sampling_note": "Class-stratified, so cluster coverage is uneven: c01/c03/c04 carry 6 items each while c05, c09, c10 and the secondhand Harbaugh cluster carry none. Well covered on public advocacy, the Autobiography and the Presidency; untested on the Rough Riders narrative, the 1877-1886 diaries and Winning of the West vols. II-III. Honest expectation for the untested domains is lower than the reported score."
+  },
+  "cost": {
+    "total_divergences": 14,
+    "slated_for_core": 14,
+    "in_core_final": 13,
+    "elevated": [
+      "CR9",
+      "CR14"
+    ],
+    "logged_out": 1,
+    "logged_out_ids": [
+      "CR13"
+    ],
+    "logged_out_destination": "fidelity-ledger/episodic.md",
+    "missing_unlogged": 0,
+    "presence_assertion": "pass",
+    "note": "core carries 13 cost-refusals and 7 interactional elements; 9 refusals and 4 interactional moves are stated in SKILL.md itself, the rest in references/"
+  },
+  "style": {
+    "modulation_reproduced": true,
+    "modulation_note": "contestation lengthens rather than clips: corpus +23.7% (c01 38.79 vs 31.36 words), samples +23.7% (30.62 vs 24.76)",
+    "sentence_len_delta": -0.13,
+    "hedge_rate_delta": -0.06,
+    "booster_rate_delta": 2.63,
+    "avoid_list": "pass",
+    "absent_abstraction_signature": "reproduced",
+    "notes": "Shape and modulation hold. Two real divergences: R1 sample sentences run 10-17% short of baseline, and booster rate overshoots baseline by 2.1-3.7x. Booster rates over 400-900 word samples are noisy against a 379,950-word baseline, so the ratio is more reliable than its magnitude.",
+    "by_family": {
+      "R1": {
+        "baseline_mean_sentence": 29.96,
+        "samples_mean_sentence": [
+          24.76,
+          30.62,
+          26.88
+        ],
+        "baseline_booster_per_1k": 3.95,
+        "samples_booster_per_1k": [
+          9.5,
+          8.16,
+          14.66
+        ],
+        "baseline_hedge_per_1k": 5.52,
+        "samples_hedge_per_1k": [
+          2.38,
+          4.08,
+          9.02
+        ],
+        "sentence_len_delta": -0.13
+      },
+      "R2": {
+        "tested": false,
+        "note": "no R2 sample generated; the third-person narrative family is untested by style-match"
+      },
+      "R3": {
+        "baseline_mean_sentence": 21.86,
+        "samples_mean_sentence": [
+          18.33
+        ],
+        "baseline_second_person_pct": 15.5,
+        "samples_second_person_pct": [
+          38.5
+        ],
+        "sentence_len_delta": -0.16
+      }
+    }
+  },
+  "discrimination": {
+    "required": true,
+    "score": 0.9,
+    "n": 20,
+    "correct": 18,
+    "seed": 42,
+    "mask_names": true,
+    "verdict": "separable",
+    "confusable_pairs": [
+      "c06<->c10"
+    ],
+    "note": "the one confusion pair is the same work in the same family and is merged into a single module in the shipped package"
+  },
+  "name_audit": {
+    "passed": true,
+    "min_hits": 1,
+    "case_sensitive": true,
+    "corpus": "ten firsthand clusters only",
+    "n_names": 16,
+    "n_thin": 9,
+    "note": "nine of sixteen names are attested fewer than five times; Roosevelt's coinages are rare in his own writing. malefactors of great wealth and New Nationalism have zero attestation and are excluded from the package."
+  },
+  "validation": {
+    "script": "validate_package.py",
+    "result": "PASS",
+    "errors": 0,
+    "warnings": 0
+  }
+}
