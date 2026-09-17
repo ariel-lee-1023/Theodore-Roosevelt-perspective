@@ -20,7 +20,7 @@ roughly 2.53M tokens of source material, 1.12M words of it Roosevelt's own.
 
 ```
 Theodore-Roosevelt-perspective/
-├── SKILL.md                                       # the core persona — self-contained
+├── SKILL.md                                       # core persona; read with voice and frameworks
 ├── references/
 │   ├── clusters/
 │   │   ├── c01-strenuous-life.md                  # public doctrine 1899–1901: exhortation, national
@@ -36,8 +36,8 @@ Theodore-Roosevelt-perspective/
 │   │   │                                          #   Indian wars
 │   │   └── c08-letters-to-his-children.md         # writing to a child — a separate register family
 │   ├── frameworks.md                              # named constructs and standing verdicts (lookup)
-│   └── voice.md                                   # the measured expressive system — load before
-│                                                  #   sustained prose
+│   └── voice.md                                   # the measured expressive system; required
+│                                                  #   in full at activation
 ├── fidelity-ledger/
 │   ├── provenance.md                              # honesty ledger: element → source → score → gate
 │   │                                              #   status; human-facing, never loaded at runtime
@@ -49,13 +49,13 @@ Theodore-Roosevelt-perspective/
 └── README.md
 ```
 
-`SKILL.md` alone is enough for most questions. Load a reference file only when a register needs finer
-grain — the loading hints are at the bottom of `SKILL.md`.
+Before the first substantive reply, read `SKILL.md`, `references/voice.md` and
+`references/frameworks.md` in full, including for short answers. Additional work modules
+follow the loading hints at the bottom of `SKILL.md`.
 
 `frameworks.md` and `voice.md` are the two **standing modules**: what the person thinks with, and how
-the person sounds. The core carries only enough style to *frame* an answer in the voice, not enough
-to *write* one at length — so **load `voice.md` before writing more than a paragraph or two of
-sustained prose in this voice.** It holds the three register families, the trigger→shift modulation
+the person sounds. Both are required at activation regardless of topic or answer length.
+The core sketch does not replace the complete expressive system. `voice.md` holds the three register families, the trigger→shift modulation
 rules, the avoid-list, and the measured `style_metrics` baselines the style-match test compares
 against.
 
@@ -65,6 +65,19 @@ volumes II–III. Each merged module declares both cluster ids so the provenance
 `frameworks.md` still resolve.
 
 ---
+
+## Activation
+
+Before the first substantive answer, read the complete [SKILL.md](SKILL.md),
+[voice](references/voice.md) and [frameworks](references/frameworks.md), including for
+short replies. The core supplies the perspective, voice supplies its expressive
+system, and frameworks supplies its conceptual and reasoning distinctions. Reuse files
+already fully retained in context; reload missing files after compaction. Add topic,
+work or mode modules when relevant. For a chat without file access, supply all three
+complete texts at the start.
+
+This loading-only update has not been reassessed. Existing assessment results remain
+attached to the runtime inputs and scope originally tested.
 
 ## Usage
 
@@ -78,13 +91,14 @@ git clone https://github.com/ariel-lee-1023/Theodore-Roosevelt-perspective.git \
   ~/.claude/skills/Theodore-Roosevelt-perspective
 ```
 
-The agent reads the YAML frontmatter in `SKILL.md` to decide when to trigger, then pulls the
-reference files on demand.
+The agent reads the YAML frontmatter in `SKILL.md` to decide when to trigger, then reads
+the core, voice and frameworks in full. It loads additional work modules when relevant.
 
 ### As a plain system prompt
 
-Paste the body of `SKILL.md` (everything after the frontmatter) as your system prompt. Append one or
-two reference files when the topic calls for them. Do not paste `fidelity-ledger/provenance.md` or
+Paste the body of `SKILL.md` (everything after the frontmatter) together with the full
+`references/voice.md` and `references/frameworks.md` as your system prompt. Add work
+modules when the topic calls for them. Do not paste `fidelity-ledger/provenance.md` or
 `fidelity-ledger/episodic.md` into the prompt — they are metadata about the distillation, and putting
 them in context degrades the voice.
 
