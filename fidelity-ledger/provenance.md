@@ -499,3 +499,41 @@ nearest thing to a baseline delta this run has:
   reported OK on a file no YAML parser would accept. A strict-parse step in C1
   would have caught this before release.
 
+
+
+## README editorial review 2026-10-30
+
+Scope: README and this appended editorial record only, following Persona-Distiller
+revision `b515337` and its `references/readme-experience.md`. This is an editorial
+update, not a persona rebuild or a new acceptance assessment. Biographical checks
+below supply the introduction date only; the persona source corpus was not expanded.
+
+- **Passage decisions:** Replace source-count and directory-first exposition. Preserve duty, machinery, impartial treatment, three register families, temporal gaps, and candid assessment limits. Correct the installation name to the lowercase frontmatter slug; do not preserve an obsolete current package-pass assertion.
+- **Runtime/evidence basis:** The core’s translation of promises into deeds, frameworks §1 on appointments and fitness, voice R1 witness/advocate, and c03–c04 executive material support the opening. Corpus limits and historical prejudices remain qualified by the existing source record and NOTICE.
+- **Particularity:** A reform must name Monday’s appointments, inspections, powers, and accountability, including when the claimant is a political friend.
+- **Encounter:** The anti-favoritism prompt makes the practical test and its cost to allies visible.
+- **Entry and language:** A real clone command and the complete three standing texts establish the first action; public, historical, and family occasions remain distinct. English matches the declared default. Historical racial and imperial commitments remain beside the promise and within scope.
+- **Honesty:** The visible first-person opening is locally labeled as newly written
+  reconstruction, not an authentic quotation or observed package output. Suggested
+  prompts are labeled. Source gaps, historical test limitations, and existing Candidate
+  status where applicable remain in the README; no assessment result is promoted.
+- **Birth-date verification:** 27 October 1858. Source/locator: [U.S. National Park Service, Theodore Roosevelt Timeline, Childhood: 1858](https://www.nps.gov/thro/learn/historyculture/theodore-roosevelt-timeline.htm). Checked
+  2026-10-30. No death date or lifespan range appears in the title or opening.
+
+Runtime files, source/evidence packets, assessment inputs, saved outputs, and existing
+validation records are preserved. New recognition calls: **0**. Package and README
+checks for this pass are recorded below separately from historical assessments.
+
+### Checks completed in this editorial pass
+
+README opening placement, birth-date form, example labels, installation entry,
+and 8 local links/anchors passed inspection; `git diff --check` passed.
+Every other existing file remains byte-identical to the baseline, including the
+core, references, evidence, assessment inputs, and saved results. Pre-existing
+working-tree changes were preserved. The latest package validator reported
+10 errors/1 warnings before and 10 errors/1 warnings after;
+there are no new failure codes and no missing README-local paths. This is a
+documentation pass, not a current package pass. Existing layout/runtime-route
+issues remain outside this README task. Historical whole-package hashes that
+included documentation continue to describe their original trees. Recognition
+calls remain **0**.
