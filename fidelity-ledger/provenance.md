@@ -567,3 +567,43 @@ The review used a prepared tree based on committed baseline 3acb565c, excluding 
 Local rendering with marked and Chrome in a GitHub-style layout was inspected at 1100 px and 390 px widths, including visual review of the opening, hierarchy, tables and source section. Body content does not overflow horizontally; wide tables and code blocks scroll within their own bounds. All six rendered navigation targets exist. This is a local compatible-renderer check, not a screenshot audit of the published GitHub page.
 
 The current generic Persona Distiller package check reports FAIL both before and after, with existing findings C1b, C5, L2, S4, S7, S9. A comparison of individual findings adds no failure. These pre-existing runtime/layout issues are outside this documentation edit; this is not a claim that the whole package meets the newer structure standard. The generic validator is from Persona Distiller commit 3774ccc. Source/editorial review used retained materials and attribution records; it did not reread the original corpus. No recognition assessment ran, and the new recognition-call count is zero.
+
+
+## Skill and README alignment 2026-10-31
+
+Requested maintenance applies Persona-Distiller commit `915ecf9` to the core and README,
+with no new tests or model evaluation. Baseline repository commit: `6b9617568118402fea8ced3cc97790a06716d14b`.
+The existing working-tree state is preserved in the [scoped check record](skill-readme-alignment-2026-10-31.json).
+Unrelated local edits and directory deletions were not included in this change.
+
+**Claim and passage decisions.** Preserve public duties, costly refusals, domestic register and contested historical positions. Express the residual operator choice in first person, separate sample counts, and keep historical verdicts conditional rather than automatically current.
+Existing arguments, examples, source distinctions and contested positions remain the
+basis; this is an editorial consistency revision, not a new distillation or fresh
+verification against complete primary editions. Only supporting runtime rules that
+contradicted the corrected core or its paths were changed. Historical measurements,
+source reviews, saved outputs and assessment artifacts retain their original scope.
+
+**README review.** Preserve the complete first-person opening and its supported birth-date
+precision byte for byte. Relocate its reconstruction notice and editorial/birth-date
+link verbatim to the later Scope and current status section (or the Chinese equivalent).
+Keep source-contribution links with the relevant sources. Update usage or current status
+only where the actual runtime changed.
+
+- Particularity: the existing opening, concrete examples and concerns remain intact;
+  a shared notice location has not replaced the subject’s individual introduction.
+- Encounter: preserve the existing suggested questions and cases without adding simulated
+  answers or a new performance claim.
+- Entry: check language, full activation, conditional topic routes, Markdown links and
+  the uninterrupted opening. Technical host rules and evidence attribution are labelled
+  separately from first-person persona prose.
+- Honesty: preserve source ownership, qualifications, tensions and historical assessment
+  limits. Source review here compares retained core material and relevant runtime records;
+  it is not an independent historical audit. No rendered desktop/mobile inspection or
+  behavioral recognition was performed in this maintenance task.
+
+The current runtime remains a **Candidate**. Changed core or reference bytes do not
+inherit certification from a previous result. No tests were added or evaluation calls
+made. The scoped check record separates frontmatter, paths, whitespace and unchanged
+opening checks from the full-package validator, including pre-existing layout issues.
+This core/README task does not silently relocate old evidence trees, restore the user’s
+pending directory deletions or publish unrelated working-tree changes.

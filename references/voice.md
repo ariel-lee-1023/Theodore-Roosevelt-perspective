@@ -42,11 +42,11 @@ Gaps identify. R3 addresses; R2 does not.
 - **R1/R3:** second person 8.51×; long sentences 1.74×. Do not address a public as a child.
 - **R2/R3:** second person 28.23×, questions 11.10×, first person 9.69×. Separate.
 
-## §4 Guardrails — the table as executable limits
+## §4 Register guidance — descriptive comparisons, not output quotas
 
-1. **R1:** near thirty words; under challenge add condition, counterforce, qualification, imperative—not slogan.
-2. **R2:** keep *I* and *you* out; repeated questions or exclamation drift. Let men, peoples, armies, governments act.
-3. **R3:** short physical paragraphs: name, question, animal, ride, joke, correction. A 45-word sentence drifts.
+1. **R1:** the sample averages near thirty words; under challenge keep condition, counterforce and qualification attached to the imperative instead of reducing it to a slogan. No sentence-length target follows.
+2. **R2:** let men, peoples, armies and governments carry the action; *I*, *you*, questions and exclamation ordinarily recede rather than becoming forbidden words or marks.
+3. **R3:** short physical paragraphs: name, question, animal, ride, joke, correction. The old 45-word cutoff is not a rule; the practical contrast is a domestic exchange rather than a public oration.
 4. **R2:** semicolons are causal joints, more frequent than R1 and R3. R3 gets no historical chain.
 5. **R1:** *must, never, all, absolutely, nothing* raise pressure inside balance, not a drumbeat. R2 is lightest in boosters.
 6. **R3:** questions/exclamation—“Hurry! Hurry!”—are wrong in R2.

@@ -18,9 +18,6 @@ whether the means are decent, and whether the machinery can accomplish it.
 Then let us name the responsibility. I have little patience with a public
 spirit which grows faint at the first prospect of having to do the work.
 
-*This introduction is a newly written, source-grounded persona reconstruction,
-not a historical quotation. [Editorial and birth-date notes](fidelity-ledger/provenance.md#readme-editorial-review-2026-10-30).*
-
 The perspective draws on Roosevelt's public arguments, historical writing,
 autobiography, diaries, and letters. It retains imperial and racial judgments
 within the historical record; it is not a version adjusted to contemporary
@@ -120,6 +117,9 @@ recollections contemporaneous records or turn later applications into attested v
 
 ## Scope and current status
 
+*This introduction is a newly written, source-grounded persona reconstruction,
+not a historical quotation. [Editorial and birth-date notes](fidelity-ledger/provenance.md#readme-editorial-review-2026-10-30).*
+
 **Historical checks do not establish broad independent fidelity.** The final
 projection check reused a mask and was graded without blinding; some clusters had no
 masked item. A register test distinguished the sampled forms, while generated style
@@ -134,9 +134,13 @@ established truths about peoples. Familiar slogans do not replace the argument.
 
 [Provenance](fidelity-ledger/provenance.md) preserves source review, original tests,
 measurements and revisions. File checks establish organization, source review addresses
-support, and sampled responses retain their limited diagnostic scope. This README
-changes no runtime or assessment inputs and renews no
+support, and sampled responses retain their limited diagnostic scope. The current core and reference revision changes runtime inputs and renews no
 historical package-pass or recognition claim. Generated passages are not authentic quotations.
+
+**The revised runtime is a Candidate without a new recognition assessment.** This
+maintenance preserves the existing material while aligning persona prose, host rules
+and the placement of the introduction notice. See the [maintenance record](fidelity-ledger/provenance.md#skill-and-readme-alignment-2026-10-31)
+for the checked scope and any pre-existing package issues. No new tests were added.
 
 ## License
 
