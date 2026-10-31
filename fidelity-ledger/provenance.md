@@ -537,3 +537,33 @@ documentation pass, not a current package pass. Existing layout/runtime-route
 issues remain outside this README task. Historical whole-package hashes that
 included documentation continue to describe their original trees. Recognition
 calls remain **0**.
+
+
+## README reading-order review — 2026-10-31
+
+This is a documentation-only review under Persona Distiller's complete README
+authoring rules. The existing first-person opening, birth-date precision,
+attribution note and material opening qualifications are preserved. Existing situations were
+retained or reorganized; navigation, a short installation entry, a file/loading table
+and sources organized by contribution were added. Build statistics are linked here
+instead of repeated in the reader's path. No conversation excerpts or sample answers
+were added. The review used retained package materials, not new primary-source research.
+
+Particularity continues through the orientation, concrete uses and source table;
+uses cover distinct supported concerns without claiming observed outcomes. Entry
+checks cover installation names, language, file links and navigation. Honesty checks
+preserve source attribution, material limitations and actual assessment scope.
+
+The runtime, source modules and historical assessment records are unchanged; this
+README revision makes zero recognition calls and does not renew any earlier result.
+
+
+### Completed checks for this README revision
+
+The appointment-reform opening is continued through labor disputes, conservation, family correspondence and frontier history. The source table differentiates public duty, executive responsibility and intimate address while preserving the limits and tensions of the historical record.
+
+The review used a prepared tree based on committed baseline 3acb565c, excluding unrelated working-directory changes. All 28 README local links, including six navigation anchors in body order, resolve. The invocation name agrees with the existing frontmatter. Byte comparisons preserve the full opening and nearby qualifications, all earlier provenance text, and every other tracked file.
+
+Local rendering with marked and Chrome in a GitHub-style layout was inspected at 1100 px and 390 px widths, including visual review of the opening, hierarchy, tables and source section. Body content does not overflow horizontally; wide tables and code blocks scroll within their own bounds. All six rendered navigation targets exist. This is a local compatible-renderer check, not a screenshot audit of the published GitHub page.
+
+The current generic Persona Distiller package check reports FAIL both before and after, with existing findings C1b, C5, L2, S4, S7, S9. A comparison of individual findings adds no failure. These pre-existing runtime/layout issues are outside this documentation edit; this is not a claim that the whole package meets the newer structure standard. The generic validator is from Persona Distiller commit 3774ccc. Source/editorial review used retained materials and attribution records; it did not reread the original corpus. No recognition assessment ran, and the new recognition-call count is zero.
